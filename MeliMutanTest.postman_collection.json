@@ -1,0 +1,1528 @@
+{
+	"info": {
+		"_postman_id": "5d8f5ce0-68aa-4f6a-844c-599548bd8f28",
+		"name": "Meli Mutan Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost 127.0.0.1",
+			"item": [
+				{
+					"name": "GET - Stats 200 OK Mutan 1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a26caed-cd39-464e-a79a-3e44404abf0d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"dna\":[\"ATGCGA\",\"CAGTGC\",\"TTATGT\",\"AGAAGG\",\"CCCCTA\",\"TCACTG\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/dna/mutant/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"mutant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET - Stats 200 OK Mutan 1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0f93bb35-6549-4b74-b726-8937edb3de0c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/dna/stats/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"stats",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-Mutant True 200 OK Mutan 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a26caed-cd39-464e-a79a-3e44404abf0d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"dna\":[\"ATGCGA\",\"CAGTGA\",\"TTATGA\",\"AGAAGA\",\"CCGCTA\",\"TCACTG\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/dna/mutant/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"mutant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET - Stats 200 OK Mutan 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0f93bb35-6549-4b74-b726-8937edb3de0c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/dna/stats/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"stats",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-Mutant True 200 OK Mutan 3 Matrix 7 x 7",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a26caed-cd39-464e-a79a-3e44404abf0d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"dna\":[\"ATGCGAA\",\"CAGTGCA\",\"TTATGTA\",\"AGAAGGA\",\"CCCCTAA\",\"TCACTGA\",\"TCACTGA\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/dna/mutant/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"mutant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-Mutant True 200 OK Mutan 2 Again",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a26caed-cd39-464e-a79a-3e44404abf0d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"dna\":[\"ATGCGA\",\"CAGTGA\",\"TTATGA\",\"AGAAGA\",\"CCGCTA\",\"TCACTG\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/dna/mutant/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"mutant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET - Stats 200 OK Mutan 2 Duplicates",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0f93bb35-6549-4b74-b726-8937edb3de0c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/dna/stats/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"stats",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-Mutant False 403 FORBIDDEN - Not Mutant 1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a26caed-cd39-464e-a79a-3e44404abf0d",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"dna\":[\"ATGCGA\",\"CAGTGC\",\"TTATGT\",\"AGAAGG\",\"CCCATA\",\"TCACTG\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/dna/mutant/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"mutant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-Mutant False 403 FORBIDDEN - Not Mutan 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a26caed-cd39-464e-a79a-3e44404abf0d",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"dna\":[\"ATGCGA\",\"CAGTGC\",\"TTCTGT\",\"AGAAGG\",\"CCCATA\",\"TCACTG\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/dna/mutant/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"mutant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-Mutant False 403 FORBIDDEN - Error Size NxN",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a26caed-cd39-464e-a79a-3e44404abf0d",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"dna\":[\"ATGCGA\",\"CAGTGC\",\"TTATGTT\",\"AGAAGG\",\"CCCATA\",\"TCACTGG\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/dna/mutant/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"mutant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-Mutant False 403 FORBIDDEN - Error Not Valid DNA Bases: A-C-G-T",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a26caed-cd39-464e-a79a-3e44404abf0d",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"dna\":[\"ATGCGA\",\"CAGTGC\",\"TBATGT\",\"AGAAGG\",\"CCLATA\",\"TCACTG\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/dna/mutant/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"mutant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-Mutant False 403 FORBIDDEN - Error Not Valid Empty Format",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a26caed-cd39-464e-a79a-3e44404abf0d",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"dna\":[\"\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/dna/mutant/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"mutant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-Mutant False 403 FORBIDDEN - Error Not Valid Empty Format 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a26caed-cd39-464e-a79a-3e44404abf0d",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"dna\":[]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/dna/mutant/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"mutant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-Mutant False 403 FORBIDDEN - Error Not Valid Format",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a26caed-cd39-464e-a79a-3e44404abf0d",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"dna\":[\"adsfadfadfadfadfadfadf\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/dna/mutant/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"mutant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET - Stats 200 OK Mutan After Errors - Stats should not change",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0f93bb35-6549-4b74-b726-8937edb3de0c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/dna/stats/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"stats",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "AWS 3.136.69.74",
+			"item": [
+				{
+					"name": "GET - Stats 200 OK Mutan 1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a26caed-cd39-464e-a79a-3e44404abf0d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"dna\":[\"ATGCGA\",\"CAGTGC\",\"TTATGT\",\"AGAAGG\",\"CCCCTA\",\"TCACTA\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.136.69.74:8080/dna/mutant/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"136",
+								"69",
+								"74"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"mutant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET - Stats 200 OK Mutan 1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0f93bb35-6549-4b74-b726-8937edb3de0c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://3.136.69.74:8080/dna/stats/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"136",
+								"69",
+								"74"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"stats",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-Mutant True 200 OK Mutan 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a26caed-cd39-464e-a79a-3e44404abf0d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"dna\":[\"ATGCGA\",\"CAGTGA\",\"TTATGA\",\"AGAAGA\",\"CCGCTA\",\"TCACTG\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.136.69.74:8080/dna/mutant/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"136",
+								"69",
+								"74"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"mutant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET - Stats 200 OK Mutan 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0f93bb35-6549-4b74-b726-8937edb3de0c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.136.69.74:8080/dna/stats/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"136",
+								"69",
+								"74"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"stats",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-Mutant True 200 OK Mutan 3 Matrix 7 x 7",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a26caed-cd39-464e-a79a-3e44404abf0d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"dna\":[\"ATGCGAA\",\"CAGTGCA\",\"TTATGTA\",\"AGAAGGA\",\"CCCCTAA\",\"TCACTGA\",\"TCACTGA\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.136.69.74:8080/dna/mutant/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"136",
+								"69",
+								"74"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"mutant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-Mutant True 200 OK Mutan 2 Again",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a26caed-cd39-464e-a79a-3e44404abf0d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"dna\":[\"ATGCGA\",\"CAGTGA\",\"TTATGA\",\"AGAAGA\",\"CCGCTA\",\"TCACTG\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.136.69.74:8080/dna/mutant/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"136",
+								"69",
+								"74"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"mutant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET - Stats 200 OK Mutan 2 Duplicates",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0f93bb35-6549-4b74-b726-8937edb3de0c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.136.69.74:8080/dna/stats/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"136",
+								"69",
+								"74"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"stats",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-Mutant False 403 FORBIDDEN - Not Mutant 1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a26caed-cd39-464e-a79a-3e44404abf0d",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"dna\":[\"ATGCGA\",\"CAGTGC\",\"TTATGT\",\"AGAAGG\",\"CCCATA\",\"TCACTG\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.136.69.74:8080/dna/mutant/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"136",
+								"69",
+								"74"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"mutant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-Mutant False 403 FORBIDDEN - Not Mutan 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a26caed-cd39-464e-a79a-3e44404abf0d",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"dna\":[\"ATGCGA\",\"CAGTGC\",\"TTCTGT\",\"AGAAGG\",\"CCCATA\",\"TCACTG\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.136.69.74:8080/dna/mutant/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"136",
+								"69",
+								"74"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"mutant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-Mutant False 403 FORBIDDEN - Error Size NxN",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a26caed-cd39-464e-a79a-3e44404abf0d",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"dna\":[\"ATGCGA\",\"CAGTGC\",\"TTATGTT\",\"AGAAGG\",\"CCCATA\",\"TCACTGG\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.136.69.74:8080/dna/mutant/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"136",
+								"69",
+								"74"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"mutant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-Mutant False 403 FORBIDDEN - Error Not Valid DNA Bases: A-C-G-T",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a26caed-cd39-464e-a79a-3e44404abf0d",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"dna\":[\"ATGCGA\",\"CAGTGC\",\"TBATGT\",\"AGAAGG\",\"CCLATA\",\"TCACTG\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.136.69.74:8080/dna/mutant/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"136",
+								"69",
+								"74"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"mutant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-Mutant False 403 FORBIDDEN - Error Not Valid Empty Format",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a26caed-cd39-464e-a79a-3e44404abf0d",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"dna\":[\"\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.136.69.74:8080/dna/mutant/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"136",
+								"69",
+								"74"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"mutant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-Mutant False 403 FORBIDDEN - Error Not Valid Empty Format 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a26caed-cd39-464e-a79a-3e44404abf0d",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"dna\":[]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.136.69.74:8080/dna/mutant/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"136",
+								"69",
+								"74"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"mutant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST-Mutant False 403 FORBIDDEN - Error Not Valid Format",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a26caed-cd39-464e-a79a-3e44404abf0d",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"dna\":[\"adsfadfadfadfadfadfadf\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.136.69.74:8080/dna/mutant/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"136",
+								"69",
+								"74"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"mutant",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET - Stats 200 OK Mutan After Errors - Stats should not change",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0f93bb35-6549-4b74-b726-8937edb3de0c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://3.136.69.74:8080/dna/stats/",
+							"protocol": "http",
+							"host": [
+								"3",
+								"136",
+								"69",
+								"74"
+							],
+							"port": "8080",
+							"path": [
+								"dna",
+								"stats",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
